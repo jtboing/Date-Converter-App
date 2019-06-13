@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An application that converts RFC-3339 formatted dates to a simple human readable format.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="js/controllers/MainController.js"></script>
+
+    <title>Date Converter App</title>
+</head>
+
+<body ng-app="dateConverterApp">
+
+    <div class="center">
+
+        <h1>Simple Date Converter App</h1>
+
+        <div class="container" ng-view>
+    
+        </div>
+
+    </div>
+
+</body>
+
+</html>

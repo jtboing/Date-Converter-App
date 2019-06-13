@@ -1,0 +1,11 @@
+<div class="form">
+    <!-- <form name="dateForm"> -->
+    <form name="dateForm" class="pure-form" novalidate>
+        <label class="wider" for="dateInput" >Input RFC-3339 Formatted Date</label>
+        <input class="wider pure-input-1-2" type="datetime" name="dateInput" id="" ng-model="date" ng-required="true"/>
+        <br>
+        <span class="pure-form-message" ng-show="dateForm.dateInput.$touched && dateForm.dateInput.$error.required">Field must be filled</span>
+        <br>
+        <button type="submit" class="pure-button pure-button-primary" ng-click="submitForm(date)">Convert</button>
+    </form>
+</div>
